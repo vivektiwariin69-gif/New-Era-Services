@@ -6,7 +6,7 @@ function Testimonials() {
   const reviews = [
     {
       review:
-        "SwiftCargo transformed our supply chain. Orders that used to take 5 days now arrive in 2. The tracking dashboard is exceptional.",
+        "New Era Services transformed our supply chain. Orders that used to take 5 days now arrive in 2. The tracking dashboard is exceptional.",
      
     },
     {
