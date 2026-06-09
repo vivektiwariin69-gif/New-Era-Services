@@ -1,0 +1,143 @@
+import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaBox,
+} from "react-icons/fa";
+
+import "./Footer.css";
+
+function Footer() {
+  return (
+    <>
+      {/* CTA SECTION */}
+
+      <section className="cta">
+        <div className="cta-content">
+          <div>
+            <h2>Ready to ship your first package?</h2>
+            <p>
+              Join 40,000+ businesses. Set up your account in minutes.
+            </p>
+          </div>
+
+          <div className="cta-buttons">
+            <button className="create-btn">
+              Create Account
+            </button>
+
+            <button className="track-btn">
+              Track Order
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+
+      <footer className="footer">
+        <div className="footer-container">
+          {/* Column 1 */}
+
+          <div className="footer-col">
+            <div className="logo">
+              <FaBox />
+              <h3>New Era Services</h3>
+            </div>
+
+            <p>
+              Reliable courier and cargo transport solutions worldwide.
+              Delivering trust, speed, and safety since 2005.
+            </p>
+
+            <div className="socials">
+              <a href="#">
+                <FaFacebookF />
+              </a>
+
+              <a href="#">
+                <FaTwitter />
+              </a>
+
+              <a href="#">
+                <FaLinkedinIn />
+              </a>
+
+              <a href="#">
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+
+          {/* Column 2 */}
+
+          <div className="footer-col">
+            <h4>QUICK LINKS</h4>
+
+            <ul>
+              <li>Home</li>
+              <li>Our Services</li>
+              <li>Track Shipment</li>
+              <li>About Us</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          {/* Column 3 */}
+
+          <div className="footer-col">
+            <h4>SERVICES</h4>
+
+            <ul>
+              <li>Express Delivery</li>
+              <li>Cargo Freight</li>
+              <li>International Shipping</li>
+              <li>Warehousing</li>
+              <li>Cold Chain Logistics</li>
+              <li>Last-Mile Delivery</li>
+            </ul>
+          </div>
+
+          {/* Column 4 */}
+
+          <div className="footer-col">
+            <h4>CONTACT INFO</h4>
+
+            <ul className="contact-info">
+              <li>
+                <FaMapMarkerAlt />
+                <span>
+                  B-177 , Pul Pehlad Pur , Badarpur
+                  <br />
+                  New Delhi -- 110044
+                </span>
+              </li>
+
+              <li>
+                <FaPhoneAlt />
+                <span>9990858178</span>
+              </li>
+
+              <li>
+                <FaEnvelope />
+                <span>neweraservices345@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          © 2026 New Era Services. All rights reserved.
+          <span> | Privacy Policy | Terms of Service</span>
+        </div>
+      </footer>
+    </>
+  );
+}
+
+export default Footer;
