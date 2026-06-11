@@ -1,0 +1,49 @@
+#track{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(14, 25, 48);
+}
+#track .p1{
+    color: rgba(249,115,22);
+    margin-top: 120px;
+}
+#track .p2{
+    color: gray;
+}
+#track h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+#track .search_Shipment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+#track .search_Shipment input{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 5vh;
+    background-color: rgba(19, 32, 64);
+    color: white;
+    border: 1px solid rgba(249,115,22);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#track .search_Shipment button{
+    width: 5vw;
+    height: 5vh;
+    color: black;
+    background-color: rgba(249,115,22);
+    border-radius: 10px;
+    border: 1px black;
+    cursor: pointer;
+}

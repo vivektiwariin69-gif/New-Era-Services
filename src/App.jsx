@@ -6,16 +6,20 @@ import Process from './Components/Process/Process'
 import Fleet from './Components/Fleet/Fleet'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Footer from './Components/Footer/Footer'
+import Track from './Components/Track/Track'
+import TrackShipment from './Components/Trackshipment/Trackshipment'
 
 function App() {
   return (
     <div>
       <Nav/>
-      <Home/>
+      <Track/>
+      <TrackShipment/>
+      {/* <Home/>
       <Services/>
       <Process/>
       <Fleet/>
-      <Testimonials/>
+      <Testimonials/> */}
       <Footer/>
     </div>
   )
