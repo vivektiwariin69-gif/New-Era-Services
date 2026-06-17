@@ -1,129 +1,203 @@
 .tracking-section {
-  min-height: 40vh;
+  padding: 100px 20px;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,140,0,.15),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #04112d,
+      #071a45,
+      #0a214f
+    );
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px;
-  background: linear-gradient(
-    135deg,
-    #071428,
-    #0a1d3d
-  );
 }
 
 .tracking-card {
   width: 100%;
-  max-width: 800px;
-  background: #13234d;
-  border-radius: 20px;
-  padding: 50px 40px;
+  max-width: 1000px;
+
+  background: rgba(19, 35, 77, 0.95);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 28px;
+
+  padding: 60px 50px;
+
   text-align: center;
-  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
 }
 
 .tracking-icon {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+
   margin: auto;
-  background: rgba(255,140,0,0.15);
+
   border-radius: 50%;
+
+  background: rgba(255,140,0,.15);
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
   color: #ff8c00;
-  font-size: 32px;
+  font-size: 36px;
+}
+
+.tracking-badge {
+  display: inline-block;
+  margin-top: 25px;
+
+  background: rgba(255,140,0,.15);
+
+  color: #ff8c00;
+
+  padding: 8px 18px;
+  border-radius: 50px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .tracking-card h2 {
+  margin-top: 20px;
   color: white;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .tracking-card p {
-  color: #aeb8d0;
-  max-width: 500px;
-  margin: auto;
-  line-height: 1.6;
+  max-width: 650px;
+  margin: 20px auto;
+
+  color: #b6c2dc;
+  line-height: 1.8;
 }
 
 .tracking-input {
+  max-width: 700px;
+  margin: 35px auto 0;
+
   display: flex;
-  gap: 12px;
-  margin-top: 35px;
-  justify-content: center;
+  overflow: hidden;
+
+  border-radius: 60px;
+
+  background: #09162f;
+  border: 1px solid #29447d;
 }
 
 .tracking-input input {
-  width: 400px;
-  padding: 15px;
-  border-radius: 10px;
+  flex: 1;
   border: none;
   outline: none;
-  background: #09162f;
+  background: transparent;
+
+  padding: 18px 25px;
+
   color: white;
+  font-size: 15px;
 }
 
 .tracking-input button {
+  border: none;
+
   background: #ff8c00;
   color: white;
-  border: none;
-  padding: 15px 28px;
-  border-radius: 10px;
+
+  padding: 18px 35px;
+
   cursor: pointer;
+
   font-weight: 600;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tracking-input button:hover {
+  background: #ff7600;
 }
 
 .tracking-features {
-  display: flex;
-  justify-content: center;
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
   gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
 }
 
 .feature-box {
-  background: #09162f;
-  padding: 18px 24px;
-  border-radius: 12px;
-  min-width: 180px;
+  background: #0d1d42;
 
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 25px;
 
-  color: white;
+  border-radius: 18px;
+
+  border: 1px solid rgba(255,255,255,.06);
+
+  transition: .3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  border-color: #ff8c00;
 }
 
 .feature-box svg {
   color: #ff8c00;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.feature-box h4 {
+  margin-top: 15px;
+  color: white;
 }
 
 .feature-box span {
-  color: #b8c3df;
+  display: block;
+  margin-top: 10px;
+
+  color: #b6c2dc;
   font-size: 14px;
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media(max-width:900px){
 
-  .tracking-card {
-    padding: 35px 20px;
+  .tracking-card{
+    padding:40px 25px;
   }
 
-  .tracking-input {
-    flex-direction: column;
+  .tracking-card h2{
+    font-size:32px;
   }
 
-  .tracking-input input {
-    width: 100%;
+  .tracking-features{
+    grid-template-columns:1fr;
   }
 
-  .tracking-input button {
-    width: 100%;
+  .tracking-input{
+    flex-direction:column;
+    border-radius:18px;
   }
 
-  .feature-box {
-    width: 100%;
+  .tracking-input button{
+    justify-content:center;
   }
 }

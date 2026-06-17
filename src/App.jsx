@@ -8,20 +8,28 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Footer from './Components/Footer/Footer'
 import Track from './Components/Track/Track'
 import TrackShipment from './Components/Trackshipment/Trackshipment'
+import { Route, Routes } from 'react-router-dom'
+import TrackOrder from './TrackOrder/TrackOrder'
+import Contact from './Contacts/Contact'
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <Track/>
-      <TrackShipment/>
-      {/* <Home/>
-      <Services/>
-      <Process/>
-      <Fleet/>
-      <Testimonials/> */}
-      <Footer/>
-    </div>
+    <>
+    <Nav/>
+
+    <Routes>
+      
+      <Route path = "/" element = {<Home/>}/>
+      <Route path = "/TrackOrder" element = {<TrackOrder/>}/>
+      <Route path = "/Contact" element = {<Contact/>}/>
+     
+
+    </Routes>
+
+     <Footer/>
+
+    </>
+   
   )
 }
 

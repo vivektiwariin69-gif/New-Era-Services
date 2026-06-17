@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-page {
+  background: #02112f;
+  color: white;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+/* HERO */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 20px;
+}
+
+.hero-tag {
+  color: #ff7b00;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  color: #9fb0c9;
+  max-width: 650px;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* CONTACT CARDS */
+
+.contact-cards {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  border-top: 1px solid #1c2d59;
+  border-bottom: 1px solid #1c2d59;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-box {
+  min-width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 123, 0, 0.15);
+  color: #ff7b00;
+  border-radius: 12px;
+}
+
+.card h3 {
+  color: #b5c2d8;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #95a6c2;
+}
+
+/* FORM SECTION */
+
+.contact-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+.form-container h2,
+.office-container h2,
+.quick-answer h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  background: #10204c;
+  border: 1px solid #2a3c70;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8fa1be;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background: #ff7b00;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #e26d00;
+}
+
+/* OFFICE */
+
+.office-card {
+  background: #10204c;
+  border: 1px solid #2a3c70;
+  border-radius: 16px;
+
+  padding: 25px;
+  display: flex;
+  gap: 18px;
+}
+
+.office-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.office-card p {
+  color: #b0bfd7;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.timing {
+  margin-top: 10px;
+}
+
+/* QUICK ANSWERS */
+
+.quick-answer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 80px;
+}
+
+.answer-box {
+  background: #10204c;
+  border: 1px solid #2a3c70;
+  border-radius: 12px;
+
+  padding: 18px;
+  margin-bottom: 15px;
+}
+
+.answer-box h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.answer-box p {
+  color: #aab8cf;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

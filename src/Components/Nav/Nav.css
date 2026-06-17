@@ -32,6 +32,8 @@
     font-weight:900;
     cursor:pointer;
     color:white;
+    margin-top: 18px;
+
 }
 
 .logo span{
@@ -73,6 +75,12 @@
 
 .phone:hover{
     color:white;
+}
+span a{
+    color: gray;
+}
+a{
+    text-decoration: none;
 }
 
 .right123 button{

@@ -2,9 +2,15 @@ import React from 'react'
 import "./Home.css"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaRegCheckCircle } from "react-icons/fa";
+import Process from '../Process/Process';
+import Services from '../Servicess/Services';
+import Testimonials from '../Testimonials/Testimonials';
+import Fleet from '../Fleet/Fleet';
+import CTA from '../CTA/CTA.jsx';
  
 function Home() {
   return (
+    <>
     <div id='home'>
       <div className="left">
         <div className='button1'>
@@ -52,6 +58,14 @@ function Home() {
         </div>
       </div>
     </div>
+    <Services/>
+    <Process/>
+    
+    <Fleet/>
+    <Testimonials/>
+    <CTA/>
+
+    </>
   )
 }
  

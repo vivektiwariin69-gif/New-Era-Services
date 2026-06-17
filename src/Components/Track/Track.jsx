@@ -1,19 +1,70 @@
-import React from 'react'
-import "./Track.css"
+import React from "react";
+import "./Track.css";
+import {
+  FaSearch,
+  FaTruck,
+  FaMapMarkerAlt,
+  FaBoxOpen,
+} from "react-icons/fa";
 
 function Track() {
   return (
-    <div id='track'>
-      <p className='p1'>Track Your Shipment</p>
-      <h1>Where is My Package?</h1>
-      <p className='p2'>Enter your SwiftCargo tracking number for live, step-by-step updates.</p>
-      <div className='search_Shipment'>
-        <input type="search" placeholder='eg. SW-48291047' />
-        <button>Track</button>
+    <section id="track">
+
+      <div className="track-container">
+
+        <span className="track-tag">
+          TRACK SHIPMENT
+        </span>
+
+        <h1>
+          Where Is My
+          <span> Package?</span>
+        </h1>
+
+        <p className="track-desc">
+          Track your shipment in real-time with accurate
+          location updates, delivery status, and estimated
+          arrival information.
+        </p>
+
+        <div className="search-box">
+
+          <input
+            type="text"
+            placeholder="Enter Tracking ID (NE-123456)"
+          />
+
+          <button>
+            <FaSearch />
+            Track Now
+          </button>
+
+        </div>
+
+        <div className="features">
+
+          <div className="feature">
+            <FaTruck />
+            <span>Live Delivery Updates</span>
+          </div>
+
+          <div className="feature">
+            <FaMapMarkerAlt />
+            <span>GPS Tracking</span>
+          </div>
+
+          <div className="feature">
+            <FaBoxOpen />
+            <span>Secure Shipment</span>
+          </div>
+
+        </div>
+
       </div>
 
-    </div>
-  )
+    </section>
+  );
 }
 
-export default Track
+export default Track;

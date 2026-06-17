@@ -1,32 +1,54 @@
 import React, { useState } from "react";
 import "./Nav.css";
 import { FaPhone, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Nav() {
+  
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleNavigation = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+  
 
   return (
     <nav id="navbar">
       <div className="logo">
         <h3>
+          
           New Era <span>Services</span>
         </h3>
       </div>
 
       <div className={`menu ${menuOpen ? "active" : ""}`}>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Track Order</li>
-        <li>Contact Us</li>
+        <Link to="/" onClick={handleNavigation}>
+                        <li>Home</li>
+                      </Link>
+                      <Link to="/TrackOrder" onClick={handleNavigation}>
+                        <li>Track Order</li>
+                      </Link>
+                      <Link to="/Contact" onClick={handleNavigation}>
+                        <li>Contact Us</li>
+                      </Link>
+        
+        
+        
       </div>
 
       <div className="right123">
         <div className="phone">
           <FaPhone />
-          <span>9891859987</span>
+          <span> <a href="tel:+919891859987">
+    +91 9891859987
+  </a></span>
         </div>
 
-        <button>Track Shipment</button>
+        <Link to="/TrackOrder"><button>Track Shipment</button></Link>
+
+        
       </div>
 
       <div

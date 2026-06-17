@@ -11,32 +11,18 @@ import {
 } from "react-icons/fa";
 
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const handleNavigation = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
   return (
     <>
       {/* CTA SECTION */}
-
-      <section className="cta">
-        <div className="cta-content">
-          <div>
-            <h2>Ready to ship your first package?</h2>
-            <p>
-              Join 40,000+ businesses. Set up your account in minutes.
-            </p>
-          </div>
-
-          <div className="cta-buttons">
-            <button className="create-btn">
-              Create Account
-            </button>
-
-            <button className="track-btn">
-              Track Order
-            </button>
-          </div>
-        </div>
-      </section>
 
       {/* FOOTER */}
 
@@ -55,7 +41,7 @@ function Footer() {
               Delivering trust, speed, and safety since 2005.
             </p>
 
-            <div className="socials">
+            {/* <div className="socials">
               <a href="#">
                 <FaFacebookF />
               </a>
@@ -71,7 +57,7 @@ function Footer() {
               <a href="#">
                 <FaInstagram />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2 */}
@@ -80,11 +66,15 @@ function Footer() {
             <h4>QUICK LINKS</h4>
 
             <ul>
-              <li>Home</li>
-              <li>Our Services</li>
-              <li>Track Shipment</li>
-              <li>About Us</li>
-              <li>Contact</li>
+              <Link to="/" onClick={handleNavigation}>
+                <li>Home</li>
+              </Link>
+              <Link to="/TrackOrder" onClick={handleNavigation}>
+                <li>Track Order</li>
+              </Link>
+              <Link to="/Contact" onClick={handleNavigation}>
+                <li>Contact Us</li>
+              </Link>
             </ul>
           </div>
 
